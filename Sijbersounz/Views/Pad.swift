@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct Pad: View {
+    var color: Color
+    
     var body: some View {
         Button(action: {
             print("click!")
         }) {
             RoundedRectangle(cornerRadius: 4.0)
-                .foregroundColor(.blue)
+                .foregroundColor(color)
                 .aspectRatio(1, contentMode: .fit)
         }
     }
@@ -21,6 +23,6 @@ struct Pad: View {
 
 struct Pad_Previews: PreviewProvider {
     static var previews: some View {
-        Pad()
+        Pad(color: .blue)
     }
 }
