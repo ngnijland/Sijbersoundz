@@ -17,7 +17,7 @@ struct ContentView: View {
             
             LazyVGrid(columns: columns, spacing: 10) {
                 ForEach((0...15), id: \.self) { pad in
-                    Pad(color: .yellow)
+                    Pad(color: .yellow, title: "Patatjes")
                 }
             }.padding(10)
         }
