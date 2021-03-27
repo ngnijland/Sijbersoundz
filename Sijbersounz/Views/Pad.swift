@@ -17,7 +17,7 @@ struct Pad: View {
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 4.0)
-                    .foregroundColor(color)
+                    .foregroundColor(title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878))
                     .aspectRatio(1, contentMode: .fit)
                 
                 VStack {
@@ -43,6 +43,8 @@ struct Pad_Previews: PreviewProvider {
         Pad(color: Color(red: 0.6, green: 0.761, blue: 0.463), title: "Kermis kermis kermis")
             .previewLayout(.fixed(width: 86.0, height: 86.0))
         Pad(color: Color(red: 0.957, green: 0.490, blue: 0.6), title: "Postcodekanjers")
+            .previewLayout(.fixed(width: 86.0, height: 86.0))
+        Pad(color: Color(red: 0.957, green: 0.490, blue: 0.6))
             .previewLayout(.fixed(width: 86.0, height: 86.0))
     }
 }
