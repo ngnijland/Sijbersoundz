@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E2C6A77260E60AC005A75BE /* Pad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2C6A76260E60AC005A75BE /* Pad.swift */; };
+		6E2C6A8F260F4300005A75BE /* jemoeder.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6E2C6A8B260F4166005A75BE /* jemoeder.m4a */; };
 		6E5C1E28260609FA008E3115 /* SijbersounzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C1E27260609FA008E3115 /* SijbersounzApp.swift */; };
 		6E5C1E2A260609FA008E3115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C1E29260609FA008E3115 /* ContentView.swift */; };
 		6E5C1E2C260609FC008E3115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C1E2B260609FC008E3115 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		6E2C6A76260E60AC005A75BE /* Pad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pad.swift; sourceTree = "<group>"; };
+		6E2C6A8B260F4166005A75BE /* jemoeder.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = jemoeder.m4a; sourceTree = "<group>"; };
 		6E5C1E24260609FA008E3115 /* Sijbersounz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sijbersounz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C1E27260609FA008E3115 /* SijbersounzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SijbersounzApp.swift; sourceTree = "<group>"; };
 		6E5C1E29260609FA008E3115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		6E5C1E1B260609FA008E3115 = {
 			isa = PBXGroup;
 			children = (
+				6E2C6A8B260F4166005A75BE /* jemoeder.m4a */,
 				6E5C1E26260609FA008E3115 /* Sijbersounz */,
 				6E5C1E38260609FC008E3115 /* SijbersounzTests */,
 				6E5C1E43260609FC008E3115 /* SijbersounzUITests */,
@@ -246,6 +249,7 @@
 			files = (
 				6E5C1E2F260609FC008E3115 /* Preview Assets.xcassets in Resources */,
 				6E5C1E2C260609FC008E3115 /* Assets.xcassets in Resources */,
+				6E2C6A8F260F4300005A75BE /* jemoeder.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

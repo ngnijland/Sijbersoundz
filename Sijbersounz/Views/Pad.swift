@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct Pad: View {
+    @State var player: AVAudioPlayer?
+    
     var color: Color
     var title: String?
     
     var body: some View {
         Button(action: {
-            print("click!")
+            self.player?.play()
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 4.0)
@@ -31,6 +34,20 @@ struct Pad: View {
                     }
                 }
                 .padding([.bottom, .leading, .trailing], 10)
+            }
+        }
+        .onAppear {
+            if let path = Bundle.main.path(forResource: "jemoeder", ofType: "m4a") {
+                self.player = AVAudioPlayer()
+                
+                let url = URL(fileURLWithPath: path)
+                
+                do {
+                    self.player = try AVAudioPlayer(contentsOf: url)
+                    self.player?.prepareToPlay()
+                } catch {
+                    print("Error")
+                }
             }
         }
     }
