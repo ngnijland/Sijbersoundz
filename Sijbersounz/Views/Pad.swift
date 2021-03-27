@@ -16,7 +16,15 @@ struct Pad: View {
     
     var body: some View {
         Button(action: {
-            self.player?.play()
+            if(self.player != nil) {
+                if self.player?.isPlaying == true {
+                    self.player?.pause()
+                    self.player?.currentTime = 0
+                    self.player?.play()
+                } else {
+                    self.player?.play()
+                }
+            }
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 4.0)
