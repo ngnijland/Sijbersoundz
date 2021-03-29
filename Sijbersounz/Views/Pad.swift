@@ -27,8 +27,8 @@ struct Pad: View {
             }
         }) {
             ZStack {
-                RoundedRectangle(cornerRadius: 4.0)
-                    .foregroundColor(title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878))
+                Rectangle()
+                    .opacity(0)
                     .aspectRatio(1, contentMode: .fit)
                 
                 VStack {
@@ -36,14 +36,12 @@ struct Pad: View {
                     
                     if title != nil {
                         Text(title!)
-                            .foregroundColor(.black)
-                            .font(.system(size: 8))
-                            .multilineTextAlignment(.center)
+                            .padding([.bottom, .leading, .trailing], 10)
                     }
                 }
-                .padding([.bottom, .leading, .trailing], 10)
             }
         }
+        .buttonStyle(PadStyle(color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878)))
         .onAppear {
             if let path = Bundle.main.path(forResource: "jemoeder", ofType: "m4a") {
                 self.player = AVAudioPlayer()
