@@ -88,10 +88,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6E5C1E1B260609FA008E3115 = {
+		6E2C6AA426126474005A75BE /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				6E2C6A8B260F4166005A75BE /* jemoeder.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		6E5C1E1B260609FA008E3115 = {
+			isa = PBXGroup;
+			children = (
 				6E5C1E26260609FA008E3115 /* Sijbersounz */,
 				6E5C1E38260609FC008E3115 /* SijbersounzTests */,
 				6E5C1E43260609FC008E3115 /* SijbersounzUITests */,
@@ -112,6 +119,7 @@
 		6E5C1E26260609FA008E3115 /* Sijbersounz */ = {
 			isa = PBXGroup;
 			children = (
+				6E2C6AA426126474005A75BE /* Sounds */,
 				6E5C1E27260609FA008E3115 /* SijbersounzApp.swift */,
 				6E2C6A72260E605C005A75BE /* Views */,
 				6E5C1E2B260609FC008E3115 /* Assets.xcassets */,
