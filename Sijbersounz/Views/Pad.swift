@@ -81,12 +81,13 @@ struct Pad: View {
 struct Pad_Previews: PreviewProvider {
     static var previews: some View {
         Pad(color: Color(red: 0.62, green: 0.867, blue: 0.824), title: "Patatjes")
+            .previewDisplayName("Short title")
             .previewLayout(.fixed(width: 86.0, height: 86.0))
         Pad(color: Color(red: 0.6, green: 0.761, blue: 0.463), title: "Kermis kermis kermis")
-            .previewLayout(.fixed(width: 86.0, height: 86.0))
-        Pad(color: Color(red: 0.957, green: 0.490, blue: 0.6), title: "Postcodekanjers")
+            .previewDisplayName("Long title")
             .previewLayout(.fixed(width: 86.0, height: 86.0))
         Pad(color: Color(red: 0.957, green: 0.490, blue: 0.6))
+            .previewDisplayName("No sound connected disabled")
             .previewLayout(.fixed(width: 86.0, height: 86.0))
     }
 }
