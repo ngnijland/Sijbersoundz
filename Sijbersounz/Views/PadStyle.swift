@@ -9,11 +9,10 @@ import SwiftUI
 
 struct PadStyle: ButtonStyle {
     var color: Color
-    var isPlaying: Bool
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .background(isPlaying ? Color.red : color)
+            .background(color)
             .foregroundColor(.black)
             .font(.system(size: 8))
             .multilineTextAlignment(.center)

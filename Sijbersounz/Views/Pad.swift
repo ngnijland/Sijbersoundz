@@ -31,9 +31,17 @@ struct Pad: View {
             }
         }) {
             ZStack {
-                Rectangle()
-                    .background(Color.red)
-                    .opacity(0)
+                RoundedRectangle(cornerRadius: 4)
+                    .fill(
+                        RadialGradient(
+                            gradient: Gradient(colors: [Color.white.opacity(0.67), Color.white.opacity((0))]),
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 114
+                        )
+                    )
+                    .border(Color.white.opacity(0.67), width: isPlaying ? 2 : 0)
+                    .opacity(isPlaying ? 1 : 0)
                     .aspectRatio(1, contentMode: .fit)
                 
                 VStack {
@@ -48,8 +56,7 @@ struct Pad: View {
         }
         .buttonStyle(
             PadStyle(
-                color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878),
-                isPlaying: isPlaying
+                color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878)
             )
         )
         .onAppear {
