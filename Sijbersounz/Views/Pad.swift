@@ -9,25 +9,30 @@ import SwiftUI
 import AVKit
 
 struct Pad: View {
-    @State var player: AVAudioPlayer?
+    @State private var player: AVAudioPlayer?
+    @State private var isPlaying: Bool = false
+    @State private var del = AVDelegate()
     
     var color: Color
     var title: String?
     
     var body: some View {
         Button(action: {
-            if(self.player != nil) {
-                if self.player?.isPlaying == true {
-                    self.player?.pause()
-                    self.player?.currentTime = 0
-                    self.player?.play()
+            if(player != nil) {
+                if player?.isPlaying == true {
+                    player?.pause()
+                    player?.currentTime = 0
+                    player?.play()
                 } else {
-                    self.player?.play()
+                    player?.play()
                 }
+                
+                isPlaying = true
             }
         }) {
             ZStack {
                 Rectangle()
+                    .background(Color.red)
                     .opacity(0)
                     .aspectRatio(1, contentMode: .fit)
                 
@@ -41,16 +46,30 @@ struct Pad: View {
                 }
             }
         }
-        .buttonStyle(PadStyle(color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878)))
+        .buttonStyle(
+            PadStyle(
+                color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878),
+                isPlaying: isPlaying
+            )
+        )
         .onAppear {
             if let path = Bundle.main.path(forResource: "jemoeder", ofType: "m4a") {
-                self.player = AVAudioPlayer()
+                player = AVAudioPlayer()
                 
                 let url = URL(fileURLWithPath: path)
                 
                 do {
-                    self.player = try AVAudioPlayer(contentsOf: url)
-                    self.player?.prepareToPlay()
+                    player = try AVAudioPlayer(contentsOf: url)
+                    player?.delegate = del
+                    player?.prepareToPlay()
+                    
+                    NotificationCenter.default.addObserver(
+                        forName: NSNotification.Name("FinishPlaying"),
+                        object: player,
+                        queue: .main
+                    ) { (_) in
+                        isPlaying = false
+                    }
                 } catch {
                     print("Error")
                 }
