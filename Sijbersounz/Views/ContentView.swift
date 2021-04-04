@@ -15,11 +15,24 @@ struct ContentView: View {
             Color(red: 0.051, green: 0.051, blue: 0.051)
                 .edgesIgnoringSafeArea(.all)
             
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach((0...15), id: \.self) { pad in
-                    Pad(color: .yellow, title: "Patatjes")
+            VStack(alignment: .leading, spacing: 0) {
+                HStack {
+                    Text("SIJBER")
+                        .fontWeight(.heavy)
+                        .padding(.trailing, -7)
+                    Text("SOUNDZ")
+                        .fontWeight(.light)
                 }
-            }.padding(10)
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .padding(.horizontal, 10)
+                
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach((0...15), id: \.self) { pad in
+                        Pad(color: .yellow, title: "Patatjes")
+                    }
+                }.padding(10)
+            }.padding(.top, -20)
         }
     }
 }
