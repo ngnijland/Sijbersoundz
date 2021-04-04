@@ -27,7 +27,9 @@ struct Pad: View {
                     player?.play()
                 }
                 
-                isPlaying = true
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    isPlaying = true
+                }
             }
         }) {
             ZStack {
@@ -75,7 +77,9 @@ struct Pad: View {
                         object: player,
                         queue: .main
                     ) { (_) in
-                        isPlaying = false
+                        withAnimation(.easeInOut(duration: 0.1)) {
+                            isPlaying = false
+                        }
                     }
                 } catch {
                     print("Error")
