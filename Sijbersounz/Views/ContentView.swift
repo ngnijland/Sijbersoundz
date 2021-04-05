@@ -15,7 +15,7 @@ struct ContentView: View {
             Color(red: 0.051, green: 0.051, blue: 0.051)
                 .edgesIgnoringSafeArea(.all)
             
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading) {
                 HStack {
                     Text("SIJBER")
                         .fontWeight(.heavy)
@@ -29,7 +29,12 @@ struct ContentView: View {
                 
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach((0...15), id: \.self) { pad in
-                        Pad(color: .yellow, title: "Patatjes")
+                        Pad(
+                            color: pad > sounds.count - 1 ? nil : sounds[pad].color,
+                            title: pad > sounds.count - 1 ? nil : sounds[pad].title,
+                            fileName: pad > sounds.count - 1 ? nil : sounds[pad].file.name,
+                            fileType: pad > sounds.count - 1 ? nil : sounds[pad].file.type
+                        )
                     }
                 }.padding(10)
             }.padding(.top, -20)

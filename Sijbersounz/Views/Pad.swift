@@ -13,8 +13,10 @@ struct Pad: View {
     @State private var isPlaying: Bool = false
     @State private var del = AVDelegate()
     
-    var color: Color
+    var color: Color?
     var title: String?
+    var fileName: String?
+    var fileType: String?
     
     var body: some View {
         Button(action: {
@@ -58,11 +60,11 @@ struct Pad: View {
         }
         .buttonStyle(
             PadStyle(
-                color: title != nil ? color : Color(red: 0.875, green: 0.867, blue: 0.878)
+                color: color != nil ? color! : Color(red: 0.875, green: 0.867, blue: 0.878)
             )
         )
         .onAppear {
-            if let path = Bundle.main.path(forResource: "jemoeder", ofType: "m4a") {
+            if let path = Bundle.main.path(forResource: fileName, ofType: fileType) {
                 player = AVAudioPlayer()
                 
                 let url = URL(fileURLWithPath: path)
@@ -91,14 +93,30 @@ struct Pad: View {
 
 struct Pad_Previews: PreviewProvider {
     static var previews: some View {
-        Pad(color: Color(red: 0.62, green: 0.867, blue: 0.824), title: "Patatjes")
-            .previewDisplayName("Short title")
-            .previewLayout(.fixed(width: 86.0, height: 86.0))
-        Pad(color: Color(red: 0.6, green: 0.761, blue: 0.463), title: "Kermis kermis kermis")
-            .previewDisplayName("Long title")
-            .previewLayout(.fixed(width: 86.0, height: 86.0))
-        Pad(color: Color(red: 0.957, green: 0.490, blue: 0.6))
-            .previewDisplayName("No sound connected disabled")
-            .previewLayout(.fixed(width: 86.0, height: 86.0))
+        Group {
+            Pad(
+                color: Color(red: 0.62, green: 0.867, blue: 0.824),
+                title: "Patatjes",
+                fileName: "je_moeder",
+                fileType: "m4a"
+            )
+                .previewDisplayName("Short title")
+                
+            Pad(
+                color: Color(red: 0.6, green: 0.761, blue: 0.463),
+                title: "Kermis kermis kermis",
+                fileName: "je_moeder",
+                fileType: "m4a"
+            )
+                .previewDisplayName("Long title")
+            
+            Pad(
+                color: Color(red: 0.957, green: 0.490, blue: 0.6),
+                fileName: "je_moeder",
+                fileType: "m4a"
+            )
+                .previewDisplayName("No sound connected disabled")
+        }
+        .previewLayout(.fixed(width: 86.0, height: 86.0))
     }
 }

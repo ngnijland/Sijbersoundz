@@ -1,0 +1,106 @@
+[
+    {
+        "title": "Groningen",
+        "file": {
+            "name": "groningen",
+            "type": "m4a",
+        },
+        "colorName": "green"
+    },
+    {
+        "title": "Nah broer",
+        "file": {
+            "name": "nah_broer",
+            "type": "m4a",
+        },
+        "colorName": "green"
+    },
+    {
+        "title": "Je moeder",
+        "file": {
+            "name": "je_moeder",
+            "type": "m4a",
+        },
+        "colorName": "turquoise"
+    },
+    {
+        "title": "Postcodekanjers",
+        "file": {
+            "name": "postcodekanjers",
+            "type": "m4a",
+        },
+        "colorName": "turquoise"
+    },
+    {
+        "title": "Patatjes",
+        "file": {
+            "name": "patatjes",
+            "type": "m4a",
+        },
+        "colorName": "green"
+    },
+    {
+        "title": "Champions league",
+        "file": {
+            "name": "champions_league",
+            "type": "m4a",
+        },
+        "colorName": "green"
+    },
+    {
+        "title": "Tequilla",
+        "file": {
+            "name": "tequilla",
+            "type": "m4a",
+        },
+        "colorName": "pink"
+    },
+    {
+        "title": "Vliegtuig",
+        "file": {
+            "name": "poah-vliegtuig",
+            "type": "m4a",
+        },
+        "colorName": "pink"
+    },
+    {
+        "title": "Koud bier",
+        "file": {
+            "name": "koud-bier-meenemen",
+            "type": "m4a",
+        },
+        "colorName": "purple"
+    },
+    {
+        "title": "Dankjewel",
+        "file": {
+            "name": "dankjewel",
+            "type": "m4a",
+        },
+        "colorName": "purple"
+    },
+    {
+        "title": "Kermis",
+        "file": {
+            "name": "kermis_kermis_kermis",
+            "type": "m4a",
+        },
+        "colorName": "orange"
+    },
+    {
+        "title": "Kermis 2",
+        "file": {
+            "name": "kermis_kermis_kermis_2",
+            "type": "m4a",
+        },
+        "colorName": "orange"
+    },
+    {
+        "title": "We willen bier",
+        "file": {
+            "name": "we_willen_bier",
+            "type": "m4a",
+        },
+        "colorName": "purple"
+    },
+]
