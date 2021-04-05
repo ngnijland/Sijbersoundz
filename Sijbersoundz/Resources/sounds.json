@@ -103,4 +103,20 @@
         },
         "colorName": "purple"
     },
+    {
+        "title": "Roken",
+        "file": {
+            "name": "roken",
+            "type": "m4a",
+        },
+        "colorName": "orange"
+    },
+    {
+        "title": "Zomer",
+        "file": {
+            "name": "zomer",
+            "type": "m4a",
+        },
+        "colorName": "orange"
+    },
 ]
