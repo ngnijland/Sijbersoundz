@@ -54,16 +54,16 @@
 /* Begin PBXFileReference section */
 		6E2C6A76260E60AC005A75BE /* Pad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pad.swift; sourceTree = "<group>"; };
 		6E2C6A93260F7E97005A75BE /* PadStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadStyle.swift; sourceTree = "<group>"; };
-		6E5C1E24260609FA008E3115 /* Sijbersounz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sijbersounz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5C1E24260609FA008E3115 /* Sijbersoundz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sijbersoundz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C1E27260609FA008E3115 /* SijbersounzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SijbersounzApp.swift; sourceTree = "<group>"; };
 		6E5C1E29260609FA008E3115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E5C1E2B260609FC008E3115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E5C1E2E260609FC008E3115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E5C1E30260609FC008E3115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E5C1E35260609FC008E3115 /* SijbersounzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SijbersounzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5C1E35260609FC008E3115 /* SijbersoundzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SijbersoundzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C1E39260609FC008E3115 /* SijbersounzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SijbersounzTests.swift; sourceTree = "<group>"; };
 		6E5C1E3B260609FC008E3115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E5C1E40260609FC008E3115 /* SijbersounzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SijbersounzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5C1E40260609FC008E3115 /* SijbersoundzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SijbersoundzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C1E44260609FC008E3115 /* SijbersounzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SijbersounzUITests.swift; sourceTree = "<group>"; };
 		6E5C1E46260609FC008E3115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EA78D94261872480065A2C9 /* AVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		6E5C1E1B260609FA008E3115 = {
 			isa = PBXGroup;
 			children = (
-				6E5C1E26260609FA008E3115 /* Sijbersounz */,
+				6E5C1E26260609FA008E3115 /* Sijbersoundz */,
 				6E5C1E38260609FC008E3115 /* SijbersounzTests */,
 				6E5C1E43260609FC008E3115 /* SijbersounzUITests */,
 				6E5C1E25260609FA008E3115 /* Products */,
@@ -153,14 +153,14 @@
 		6E5C1E25260609FA008E3115 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E5C1E24260609FA008E3115 /* Sijbersounz.app */,
-				6E5C1E35260609FC008E3115 /* SijbersounzTests.xctest */,
-				6E5C1E40260609FC008E3115 /* SijbersounzUITests.xctest */,
+				6E5C1E24260609FA008E3115 /* Sijbersoundz.app */,
+				6E5C1E35260609FC008E3115 /* SijbersoundzTests.xctest */,
+				6E5C1E40260609FC008E3115 /* SijbersoundzUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E5C1E26260609FA008E3115 /* Sijbersounz */ = {
+		6E5C1E26260609FA008E3115 /* Sijbersoundz */ = {
 			isa = PBXGroup;
 			children = (
 				6EA78DEA261A115B0065A2C9 /* Model */,
@@ -172,7 +172,7 @@
 				6E5C1E2D260609FC008E3115 /* Preview Content */,
 				6EA78DC1261A0F380065A2C9 /* Resources */,
 			);
-			path = Sijbersounz;
+			path = Sijbersoundz;
 			sourceTree = "<group>";
 		};
 		6E5C1E2D260609FC008E3115 /* Preview Content */ = {
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E5C1E23260609FA008E3115 /* Sijbersounz */ = {
+		6E5C1E23260609FA008E3115 /* Sijbersoundz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E5C1E49260609FC008E3115 /* Build configuration list for PBXNativeTarget "Sijbersounz" */;
+			buildConfigurationList = 6E5C1E49260609FC008E3115 /* Build configuration list for PBXNativeTarget "Sijbersoundz" */;
 			buildPhases = (
 				6E5C1E20260609FA008E3115 /* Sources */,
 				6E5C1E21260609FA008E3115 /* Frameworks */,
@@ -234,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = Sijbersounz;
+			name = Sijbersoundz;
 			productName = Sijbersounz;
-			productReference = 6E5C1E24260609FA008E3115 /* Sijbersounz.app */;
+			productReference = 6E5C1E24260609FA008E3115 /* Sijbersoundz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E5C1E34260609FC008E3115 /* SijbersounzTests */ = {
+		6E5C1E34260609FC008E3115 /* SijbersoundzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E5C1E4C260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersounzTests" */;
+			buildConfigurationList = 6E5C1E4C260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersoundzTests" */;
 			buildPhases = (
 				6E5C1E31260609FC008E3115 /* Sources */,
 				6E5C1E32260609FC008E3115 /* Frameworks */,
@@ -252,14 +252,14 @@
 			dependencies = (
 				6E5C1E37260609FC008E3115 /* PBXTargetDependency */,
 			);
-			name = SijbersounzTests;
+			name = SijbersoundzTests;
 			productName = SijbersounzTests;
-			productReference = 6E5C1E35260609FC008E3115 /* SijbersounzTests.xctest */;
+			productReference = 6E5C1E35260609FC008E3115 /* SijbersoundzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6E5C1E3F260609FC008E3115 /* SijbersounzUITests */ = {
+		6E5C1E3F260609FC008E3115 /* SijbersoundzUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E5C1E4F260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersounzUITests" */;
+			buildConfigurationList = 6E5C1E4F260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersoundzUITests" */;
 			buildPhases = (
 				6E5C1E3C260609FC008E3115 /* Sources */,
 				6E5C1E3D260609FC008E3115 /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				6E5C1E42260609FC008E3115 /* PBXTargetDependency */,
 			);
-			name = SijbersounzUITests;
+			name = SijbersoundzUITests;
 			productName = SijbersounzUITests;
-			productReference = 6E5C1E40260609FC008E3115 /* SijbersounzUITests.xctest */;
+			productReference = 6E5C1E40260609FC008E3115 /* SijbersoundzUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E5C1E1F260609FA008E3115 /* Build configuration list for PBXProject "Sijbersounz" */;
+			buildConfigurationList = 6E5C1E1F260609FA008E3115 /* Build configuration list for PBXProject "Sijbersoundz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -310,9 +310,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E5C1E23260609FA008E3115 /* Sijbersounz */,
-				6E5C1E34260609FC008E3115 /* SijbersounzTests */,
-				6E5C1E3F260609FC008E3115 /* SijbersounzUITests */,
+				6E5C1E23260609FA008E3115 /* Sijbersoundz */,
+				6E5C1E34260609FC008E3115 /* SijbersoundzTests */,
+				6E5C1E3F260609FC008E3115 /* SijbersoundzUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,12 +393,12 @@
 /* Begin PBXTargetDependency section */
 		6E5C1E37260609FC008E3115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E5C1E23260609FA008E3115 /* Sijbersounz */;
+			target = 6E5C1E23260609FA008E3115 /* Sijbersoundz */;
 			targetProxy = 6E5C1E36260609FC008E3115 /* PBXContainerItemProxy */;
 		};
 		6E5C1E42260609FC008E3115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E5C1E23260609FA008E3115 /* Sijbersounz */;
+			target = 6E5C1E23260609FA008E3115 /* Sijbersoundz */;
 			targetProxy = 6E5C1E41260609FC008E3115 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -526,16 +526,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Sijbersounz/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sijbersoundz/Preview Content\"";
 				DEVELOPMENT_TEAM = YU3972ZEKY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Sijbersounz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sijbersoundz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nieknijland.Sijbersounz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nieknijland.Sijbersoundz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,16 +548,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Sijbersounz/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sijbersoundz/Preview Content\"";
 				DEVELOPMENT_TEAM = YU3972ZEKY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Sijbersounz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sijbersoundz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nieknijland.Sijbersounz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nieknijland.Sijbersoundz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,7 +582,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sijbersounz.app/Sijbersounz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sijbersoundz.app/Sijbersoundz";
 			};
 			name = Debug;
 		};
@@ -604,7 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sijbersounz.app/Sijbersounz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sijbersoundz.app/Sijbersoundz";
 			};
 			name = Release;
 		};
@@ -651,7 +651,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E5C1E1F260609FA008E3115 /* Build configuration list for PBXProject "Sijbersounz" */ = {
+		6E5C1E1F260609FA008E3115 /* Build configuration list for PBXProject "Sijbersoundz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E5C1E47260609FC008E3115 /* Debug */,
@@ -660,7 +660,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E5C1E49260609FC008E3115 /* Build configuration list for PBXNativeTarget "Sijbersounz" */ = {
+		6E5C1E49260609FC008E3115 /* Build configuration list for PBXNativeTarget "Sijbersoundz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E5C1E4A260609FC008E3115 /* Debug */,
@@ -669,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E5C1E4C260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersounzTests" */ = {
+		6E5C1E4C260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersoundzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E5C1E4D260609FC008E3115 /* Debug */,
@@ -678,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E5C1E4F260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersounzUITests" */ = {
+		6E5C1E4F260609FC008E3115 /* Build configuration list for PBXNativeTarget "SijbersoundzUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E5C1E50260609FC008E3115 /* Debug */,
