@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "logo.svg",
       "idiom" : "universal"
     }
   ],
