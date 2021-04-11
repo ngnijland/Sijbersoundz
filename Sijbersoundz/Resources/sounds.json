@@ -119,4 +119,12 @@
         },
         "colorName": "orange"
     },
+    {
+        "title": "Spannend",
+        "file": {
+            "name": "spannend",
+            "type": "m4a",
+        },
+        "colorName": "green"
+    },
 ]
