@@ -28,12 +28,12 @@ struct ContentView: View {
                 .padding(.horizontal, 10)
                 
                 LazyVGrid(columns: columns, spacing: 10) {
-                    ForEach((0...15), id: \.self) { pad in
+                    ForEach(sounds, id: \.self) { sound in
                         Pad(
-                            color: pad > sounds.count - 1 ? nil : sounds[pad].color,
-                            title: pad > sounds.count - 1 ? nil : sounds[pad].title,
-                            fileName: pad > sounds.count - 1 ? nil : sounds[pad].file.name,
-                            fileType: pad > sounds.count - 1 ? nil : sounds[pad].file.type
+                            color: sound.color,
+                            title: sound.title,
+                            fileName: sound.file.name,
+                            fileType: sound.file.type
                         )
                     }
                 }.padding(10)

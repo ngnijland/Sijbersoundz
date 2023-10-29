@@ -17,7 +17,6 @@
 		6E5C1E45260609FC008E3115 /* SijbersounzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C1E44260609FC008E3115 /* SijbersounzUITests.swift */; };
 		6E6ED891261B8DF900FEBC73 /* zomer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6E6ED88F261B8DF900FEBC73 /* zomer.m4a */; };
 		6E6ED892261B8DF900FEBC73 /* roken.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6E6ED890261B8DF900FEBC73 /* roken.m4a */; };
-		6EA23A3F26232A7B0069BED8 /* spannend.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6EA23A3E26232A7B0069BED8 /* spannend.m4a */; };
 		6EA78D95261872480065A2C9 /* AVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA78D94261872480065A2C9 /* AVDelegate.swift */; };
 		6EA78DBA261A0F2D0065A2C9 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA78DB9261A0F2D0065A2C9 /* sounds.json */; };
 		6EA78DE0261A11420065A2C9 /* champions_league.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6EA78DD9261A11410065A2C9 /* champions_league.m4a */; };
@@ -71,7 +70,6 @@
 		6E5C1E46260609FC008E3115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6ED88F261B8DF900FEBC73 /* zomer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = zomer.m4a; sourceTree = "<group>"; };
 		6E6ED890261B8DF900FEBC73 /* roken.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = roken.m4a; sourceTree = "<group>"; };
-		6EA23A3E26232A7B0069BED8 /* spannend.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = spannend.m4a; path = ../../../../../Downloads/spannend.m4a; sourceTree = "<group>"; };
 		6EA78D94261872480065A2C9 /* AVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVDelegate.swift; sourceTree = "<group>"; };
 		6EA78DB9261A0F2D0065A2C9 /* sounds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		6EA78DD9261A11410065A2C9 /* champions_league.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = champions_league.m4a; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				6EA78DFD261B114F0065A2C9 /* tequilla.m4a */,
 				6E6ED890261B8DF900FEBC73 /* roken.m4a */,
 				6E6ED88F261B8DF900FEBC73 /* zomer.m4a */,
-				6EA23A3E26232A7B0069BED8 /* spannend.m4a */,
 				6EA78DFF261B114F0065A2C9 /* we_willen_bier.m4a */,
 				6EA78DD9261A11410065A2C9 /* champions_league.m4a */,
 				6EA78DDF261A11420065A2C9 /* je_moeder.m4a */,
@@ -348,7 +345,6 @@
 				6E5C1E2C260609FC008E3115 /* Assets.xcassets in Resources */,
 				6EA78DE2261A11420065A2C9 /* nah_broer.m4a in Resources */,
 				6EA78E08261B11500065A2C9 /* koud-bier-meenemen.m4a in Resources */,
-				6EA23A3F26232A7B0069BED8 /* spannend.m4a in Resources */,
 				6EA78DE3261A11420065A2C9 /* kermis_kermis_kermis.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
